@@ -93,7 +93,7 @@ function App() {
       >
         글발행
       </button>
-      {modal == true ? (
+      {modal === true ? (
         <Modal
           postTitle={postTitle}
           clickedIndex={clickedIndex}
