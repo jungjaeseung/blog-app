@@ -67,6 +67,7 @@ function App() {
       <input
         type={"text"}
         placeholder="내용입력"
+        value={inputValue}
         onChange={(e) => {
           setInputValue(e.target.value);
         }}
@@ -86,6 +87,7 @@ function App() {
             setPostTitle(newTitle);
             setPostDay(newDay);
             setLikeCount(newLike);
+            setInputValue("");
           } else {
             alert("입력하고 눌러라잉");
           }
